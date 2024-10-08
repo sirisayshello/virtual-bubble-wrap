@@ -31,7 +31,6 @@ const DarkMode = () => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = (e) => {
       if (!localStorage.getItem("theme")) {
-        // mediaQuery.matches ? setDark() : setLight();
         e.matches ? setDark() : setLight();
       }
     };
